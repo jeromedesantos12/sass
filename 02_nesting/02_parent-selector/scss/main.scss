@@ -1,0 +1,15 @@
+// &
+// Parent Selector
+
+.main {
+    .container & {
+        background-color: lightblue;
+    }
+    .main-heading {
+        font-size: 2em;
+    }
+
+    &:hover {
+        background-color: salmon;
+    }
+}

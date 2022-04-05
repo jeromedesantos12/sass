@@ -1,0 +1,14 @@
+// Map
+// $alert-denger: red;
+// $alert-success: green;
+// $alert-warning: orange;
+
+$alert: (
+    'danger': red,
+    'success': green,
+    'warning': orange
+);
+
+h1 {
+    color: map-get($alert, 'success');
+}

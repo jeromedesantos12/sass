@@ -1,0 +1,16 @@
+// SASS Variables
+$secondary-color: #f4f1de;
+$text-color: #e07a5f;
+
+body {
+    $primary-color: #f4f1de !global;
+    background-color: $primary-color;
+}
+
+h1 {
+    color: $text-color;
+}
+
+// Perilaku:
+// - Minus = Underscore
+// - Scope

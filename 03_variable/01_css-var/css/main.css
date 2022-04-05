@@ -1,0 +1,14 @@
+/* CSS Variables */
+:root {
+    --primary-color: #f4f1de;
+    --secondary-color: #f4f1de;
+    --text-color: #e07a5f;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    color: var(--text-color);
+}
