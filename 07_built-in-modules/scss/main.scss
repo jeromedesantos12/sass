@@ -1,0 +1,80 @@
+// Base
+$warna-dasar: salmon;
+
+h1 {
+    color: $warna-dasar;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+// Built-in Modules: Color
+ /* adjust-color($color, 
+    $red: null, $green: null, $blue: null, $hue: null, $saturation: null, $lightness: null, 
+    $whiteness: null, $blackness: null, $alpha: null) 
+ */
+ h1 {
+    //  color: adjust-color($color: $warna-dasar, $green: 100, $blue: 100, $red: -50);
+ }
+
+// adjust-hue($color, $degree);
+// mengikuti roda warna
+// geser ke atas (mendekati orange)
+h1 {
+    // color: adjust-hue($warna-dasar, 30deg);  
+}
+
+// complement($color)
+// warna yg berseberangan
+h1 {
+    // color: complement($color: $warna-dasar);
+}
+
+// darken($color, $amount)
+// mau lebih gelap berapa persen? (menjauhi pusat roda warna)
+h1 {
+    // color: darken($warna-dasar, 20%);
+}
+
+// lighten ($color, $amount)
+// mau lebih terang brapa persen? (mendekati pusat roda warna)
+h1 {
+    // color: lighten($warna-dasar, 20%);
+}
+
+// saturate($color, $amount)
+// tingkat kemurnian dari sebuah warna
+h1 {
+    // color: saturate($warna-dasar, $amount: 10%);
+}
+
+// desaturate($color, $amount)
+// warna semakin hilang -> jadi abu-abu
+h1 {
+    // color: desaturate($warna-dasar, $amount: 100%);
+}
+
+// grayscale(%color)
+// membuat warna desaturate 100 %
+h1 {
+    // color: grayscale($warna-dasar);
+}
+
+// mix($color1, $color2, $weight: 50%) 20% -> warna 1 sisa warna 2 (optional)
+// mencampur 2 buah warna
+h1 {
+    // color: mix($warna-dasar, blue, 80%);
+}
+
+// fade-in($color, $amount)
+// membuat elemen transparan jadi solid
+// amount antara 0-1
+h1 {
+    // color: fade-in(rgba(250, 128, 114, 0.2), 0.5);
+}
+
+// fade-out($color, $amount)
+// membuat yg tadinya solid jadi transparan
+h1 {
+    color: fade-out($warna-dasar, 0.4);
+}
